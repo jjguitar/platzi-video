@@ -1,0 +1,82 @@
+$medium_purple: #8f57fd;
+$hard_purple: #5e1dfc;
+$soft_purple: #ab88ff;
+$mountain_green: #21c08b;
+$golden_rod: #E6AF2E;
+$white: white;
+$muli: 'Muli', sans-serif;
+
+html {
+  margin: 0;
+  padding: 0;
+  background-color: $medium_purple;
+  font-family: $muli;
+  list-style: none;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header--global {
+  width: 100%;
+  height: 80px;
+}
+
+.header {
+  @extend .header--global;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: $white;
+}
+.header--logo {
+  width: 200px;
+  margin-left: 10px;
+}
+
+.header--menu {
+  margin-right: 30px;
+}
+
+.header--menu_profile {
+  @extend .center;
+  margin-right: 8px;
+  width: 40px;
+  p {
+    @extend .center;
+    height: 50px;
+    margin: 0;
+  }
+}
+
+.header--menu ul {
+  display: none;
+  padding: 0;
+  position: absolute;
+  text-align: right;
+  width: 100px;
+  margin: 0 0 0 -30px;
+  li {
+    margin: 10px 0;
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.header--menu:hover ul,
+ul:hover{
+  display: block;
+}
