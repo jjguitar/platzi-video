@@ -15,7 +15,7 @@ a {
   color: inherit;
 }
 
-.center, .header--menu_profile p, .header--menu_profile {
+.center, .search, .header--menu_profile p, .header--menu_profile {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -48,7 +48,7 @@ a {
 }
 .header--menu_profile p {
   height: 50px;
-  margin: 0;
+  margin: 0 0 0 10px;
 }
 
 .header--menu ul {
@@ -69,6 +69,72 @@ a {
 .header--menu:hover ul,
 ul:hover {
   display: block;
+}
+
+.search {
+  flex-direction: column;
+  color: white;
+  height: 200px;
+}
+.search h2 {
+  font-weight: 400;
+}
+.search input {
+  width: 70%;
+  padding: 15px 0 15px 20px;
+  border-radius: 25px;
+  outline: none;
+  border: 1px solid white;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+::placeholder {
+  color: white;
+}
+
+.carousel {
+  width: 100%;
+  overflow: scroll;
+  position: relative;
+}
+
+.title--main1 {
+  color: white;
+  padding-left: 30px;
+  font-weight: 600;
+}
+
+.carousel__container {
+  white-space: nowrap;
+  margin: 70px 0;
+  padding-bottom: 10px;
+  padding-left: 30px;
+}
+
+.carousel__item {
+  background-color: #E6AF2E;
+  width: 200px;
+  height: 250px;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-right: 10px;
+  display: inline-block;
+  cursor: pointer;
+  transition: 450ms;
+  transform-origin: center left;
+}
+
+.carousel__item:hover ~ .carousel__item {
+  transform: translate3d(100px, 0, 0);
+}
+
+.carousel__container:hover .carousel__item {
+  opacity: 0.3;
+}
+
+.carousel__container:hover .carousel__item:hover {
+  transform: scale(1.5);
+  opacity: 1;
 }
 
 /*# sourceMappingURL=styles.css.map */
