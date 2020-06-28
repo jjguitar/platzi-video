@@ -95,6 +95,7 @@ ul:hover{
     border-radius: 25px;
     outline: none;
     border: 1px solid $white;
+    color: $white;
     background-color: rgba($color: $white, $alpha: 0.1);
   }
 }
@@ -189,4 +190,8 @@ ul:hover{
 
 .carousel-item__details:hover {
   opacity: 1;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
