@@ -50,6 +50,7 @@ a {
   border: 1px solid white;
   background-color: rgba(255, 255, 255, 0.2);
   padding: 60px 68px 40px;
+  min-height: 550px;
   height: calc(100vh - 300PX);
   border-radius: 25px;
   color: white;
