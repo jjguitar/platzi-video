@@ -1,6 +1,5 @@
 @import "../componentes/global.scss";
 @import "../componentes/carousel.scss";
-@import "../componentes/media-query.scss";
 
 .header--menu {
   margin-right: 50px;
@@ -69,3 +68,5 @@ ul:hover{
 .footer {
   @extend .footer-global;
 }
+
+@import "../componentes/media-query.scss";

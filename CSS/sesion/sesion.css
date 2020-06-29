@@ -50,7 +50,7 @@ a {
   border: 1px solid white;
   background-color: rgba(255, 255, 255, 0.2);
   padding: 60px 68px 40px;
-  min-height: 550px;
+  min-height: 520px;
   width: 300px;
   height: calc(100vh - 250PX);
   border-radius: 25px;
@@ -85,45 +85,14 @@ a {
   justify-content: flex-start;
   padding-left: 20px;
   font-size: 14px;
+  position: relative;
+  bottom: 0;
 }
 .footer-global a, .footer a {
   color: white;
   padding-right: 20px;
 }
 
-@media only screen and (max-width: 450px) {
-  .login--container {
-    background-color: transparent;
-    border: none;
-    padding: 0;
-    width: 100%;
-  }
-
-  .login--form {
-    margin-top: 50px;
-  }
-
-  .social--login {
-    margin: 50px 0;
-  }
-
-  .footer a {
-    text-align: center;
-  }
-}
-@media only screen and (max-width: 320px) {
-  .header--menu_profile p {
-    display: none;
-  }
-
-  .header--menu {
-    margin-right: 10px;
-  }
-
-  .footer {
-    font-size: 10px;
-  }
-}
 .header {
   background-color: #21c08b;
 }
@@ -173,6 +142,78 @@ a:hover {
 .back-login {
   height: 150px;
   text-align: center;
+}
+
+.animated {
+  animation-duration: 2.5s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.pulse {
+  animation-name: pulse;
+  animation-duration: 1s;
+}
+
+.not-found {
+  color: white;
+  font-family: "Muli", sans-serif;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.not-found h1 {
+  font-size: 100px;
+}
+
+@media only screen and (max-width: 450px) {
+  .login--container {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    width: 100%;
+  }
+
+  .login--form {
+    margin-top: 50px;
+  }
+
+  .social--login {
+    margin: 40px 0;
+  }
+
+  .footer {
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 10px 0;
+  }
+
+  .carousel-item {
+    width: 150px;
+    height: 200px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .header--menu_profile p {
+    display: none;
+  }
+
+  .header--menu {
+    margin-right: 20px;
+  }
+  .header--menu ul {
+    margin-left: -55px;
+  }
 }
 
 /*# sourceMappingURL=sesion.css.map */

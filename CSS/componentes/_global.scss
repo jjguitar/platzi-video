@@ -58,7 +58,7 @@ a {
   border: 1px solid $white;
   background-color: rgba($color: #ffffff, $alpha: 0.2);
   padding: 60px 68px 40px;
-  min-height: 550px;
+  min-height: 520px;
   width: 300px;
   height: calc(100vh - 250PX);
   border-radius: 25px;
@@ -95,6 +95,8 @@ a {
   justify-content: flex-start;
   padding-left: 20px;
   font-size: 14px;
+  position: relative;
+  bottom: 0;
   a {
     color: $white;
     padding-right: 20px;
