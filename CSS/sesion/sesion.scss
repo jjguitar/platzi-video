@@ -1,4 +1,5 @@
 @import "../componentes/global.scss";
+@import "../componentes/media-query";
 
 .header {
   @extend .header--global;
@@ -34,7 +35,7 @@
 }
 
 .social--login {
-  margin: 90px 0;
+  margin: 70px 0;
 }
 
 .social--login__red {
@@ -52,8 +53,12 @@
 a:hover {
   text-decoration: underline;
 }
-
-.back-login {
-  margin-top: 100px;
+.register {
   text-align: center;
 }
+.back-login {
+  @extend .center;
+  height: 150px;
+  text-align: center;
+}
+

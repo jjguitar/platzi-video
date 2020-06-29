@@ -18,7 +18,7 @@ a {
   color: inherit;
 }
 
-.center, .social--login__red, .login--remember__check, .login--remember, .login, .footer-global, .footer {
+.center, .back-login, .social--login__red, .login--remember__check, .login--remember, .login, .footer-global, .footer {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -51,7 +51,7 @@ a {
   background-color: rgba(255, 255, 255, 0.2);
   padding: 60px 68px 40px;
   min-height: 550px;
-  width: 350px;
+  width: 300px;
   height: calc(100vh - 250PX);
   border-radius: 25px;
   color: white;
@@ -66,7 +66,7 @@ a {
   outline: none;
   padding: 10px 15px;
   border-bottom: 1px solid white;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .login--form_button {
@@ -74,7 +74,7 @@ a {
   border: none;
   border-radius: 50px;
   padding: 15px 0;
-  margin: 10px 0;
+  margin: 20px 0;
   color: white;
   font-size: 14px;
   outline: none;
@@ -91,6 +91,14 @@ a {
   padding-right: 20px;
 }
 
+@media only screen and (max-width: 320px) {
+  .login--container {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    width: 100%;
+  }
+}
 .header {
   background-color: #21c08b;
 }
@@ -119,7 +127,7 @@ a {
 }
 
 .social--login {
-  margin: 90px 0;
+  margin: 70px 0;
 }
 
 .social--login__red {
@@ -133,8 +141,12 @@ a:hover {
   text-decoration: underline;
 }
 
+.register {
+  text-align: center;
+}
+
 .back-login {
-  margin-top: 100px;
+  height: 150px;
   text-align: center;
 }
 
