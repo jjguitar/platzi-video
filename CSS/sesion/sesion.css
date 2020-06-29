@@ -91,12 +91,37 @@ a {
   padding-right: 20px;
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 450px) {
   .login--container {
     background-color: transparent;
     border: none;
     padding: 0;
     width: 100%;
+  }
+
+  .login--form {
+    margin-top: 50px;
+  }
+
+  .social--login {
+    margin: 50px 0;
+  }
+
+  .footer a {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .header--menu_profile p {
+    display: none;
+  }
+
+  .header--menu {
+    margin-right: 10px;
+  }
+
+  .footer {
+    font-size: 10px;
   }
 }
 .header {
