@@ -51,7 +51,8 @@ a {
   background-color: rgba(255, 255, 255, 0.2);
   padding: 60px 68px 40px;
   min-height: 550px;
-  height: calc(100vh - 300PX);
+  width: 350px;
+  height: calc(100vh - 250PX);
   border-radius: 25px;
   color: white;
 }
@@ -80,7 +81,7 @@ a {
 }
 
 .footer-global, .footer {
-  height: 100px;
+  height: 50px;
   justify-content: flex-start;
   padding-left: 20px;
   font-size: 14px;
@@ -130,6 +131,11 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+.back-login {
+  margin-top: 100px;
+  text-align: center;
 }
 
 /*# sourceMappingURL=sesion.css.map */
