@@ -99,7 +99,7 @@ a {
 
 .login {
   flex-direction: column;
-  min-height: calc(100vh - 200px);
+  min-height: calc(100vh - 250px);
   background: linear-gradient(#21c08b, #8f57fd);
   padding: 0 30px;
 }
