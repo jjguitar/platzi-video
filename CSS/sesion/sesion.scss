@@ -8,7 +8,7 @@
 .login {
   @extend .center;
   flex-direction: column;
-  min-height: calc(100vh - 200px);
+  min-height: calc(100vh - 250px);
   background: linear-gradient($mountain_green, $medium_purple);
   padding: 0 30px;
 }
